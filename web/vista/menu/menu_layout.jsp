@@ -23,7 +23,7 @@
                 </a>
                 <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="vista/referenciales/ciudad/index_ciudad.jsp">Ciudad</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/vista/referenciales/ciudad/index_ciudad.jsp">Ciudad</a>
                         <a class="nav-link" href="#">Nacionalidad</a>
                     </nav>
                 </div>
