@@ -6,14 +6,30 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Ejemplo MVC</title>
+        <%-- headers --%>
+        <jsp:include page="vista/menu/headers.jsp" />  
+        <%-- headers/ --%>
+        <title>Taller de 4to</title>
     </head>
-    <body>
-        <h1>Ejemplo MVC</h1>
-        <br>
-        <a href="${pageContext.request.contextPath}/ServletControlador">Link al servlet controlador que despliega variables</a>
+    <body class="sb-nav-fixed">
+        <%-- Nav del user --%>
+        <jsp:include page="vista/menu/user_nav.jsp" />  
+        <%-- Nav del user/ --%>
+        
+        <div id="layoutSidenav">
+            
+            <%-- Menu layout --%>
+            <jsp:include page="vista/menu/menu_layout.jsp" />
+            <%-- Menu layout/ --%>
+            
+            <%-- Contenido inicio layout --%>
+            <jsp:include page="vista/menu/start_content_layout.jsp" />
+            <%-- Contenido inicio layout/ --%>
+            
+        </div>
+        <jsp:include page="vista/menu/javascript_sources.jsp" />
     </body>
 </html>
+
